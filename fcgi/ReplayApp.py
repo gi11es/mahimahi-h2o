@@ -168,8 +168,7 @@ class ReplayApp:
                 if key == "transfer-encoding" and 'chunked' in headers[key]:
                     is_chunked = True
                 else:
-                    #Filter out any link header the site might emit.
-                    if key not in ['expires', 'date', 'last-modified','link']:
+                    if key not in ['expires', 'date', 'last-modified']:
                         hdrlist.append((key.strip(), headers[key]))
                     if key.lower() == 'access-control-allow-origin':
                         corsfound = True
