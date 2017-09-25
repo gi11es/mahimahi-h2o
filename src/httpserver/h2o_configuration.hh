@@ -23,7 +23,7 @@ ssl-session-resumption:
     mode: off
 num-ocsp-updaters: 1
 ### Global HTTP/2 Settings
-http2-push-preload: ON
+http2-push-preload: OFF
 http2-reprioritize-blocking-assets: OFF
 http2-casper: OFF
 http2-idle-timeout: 30
